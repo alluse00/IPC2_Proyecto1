@@ -1,4 +1,5 @@
-class Menu:
+
+if __name__ == '__main__':
     op = 0
 
     while op != 6:
@@ -11,6 +12,9 @@ class Menu:
         op = int(input("Ingrese una opción: "))
         if op == 1:
             print("Opción Cargar archivo:")
+            ruta=input("Ingrese la ruta\n")
+            datos=LXML.leerArchivo(ruta)
+            datos.imprimir()
         elif op == 2:
             print("Opción Procesar archivo:")
         elif op == 3:
